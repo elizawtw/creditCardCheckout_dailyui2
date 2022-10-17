@@ -7,16 +7,68 @@
   <link rel="stylesheet" href="css/styles.css">
   <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
 
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  <title>Document</title>
+  <title>Checkout</title>
 </head>
 <body>
+  <form>
+    <h1 class="title">Checkout</h1>
+    <div class="container">
+      
+      <div class="name col-md-6 col-sm-12">
+        <label for="cc-name" class="form-label">Name on card</label>
+        <input type="text" id="cc-name" class="form-control">
+        <p>Full name as displayed on card</p>
+        <div class="invalid-feedback">
+          Name is required
+        </div>
+      </div>
+      <div class="card-number col-md-6 col-sm-12">
+        <label for="cc-number" class="form-label">Card number</label>
+        <input type="text" id="cc-number" class="form-control">
+        <div class="invalid-feedback">
+          Credit card number is required
+        </div>
+      </div>
+      <div class="row">
+        <div class="card-expiry col-md-2">
+          <label for="cc-expiry" class="form-label">Expiry date</label>
+          <input type="month" id="cc-expiry" class="form-control">
+          <div class="invalid-feedback">
+            Expiry date is required
+          </div>
+        </div>
+        <div class="card-cvc col-md-2">
+          <label for="cvc" class="form-label">CVC</label>
+          <input type"number" id="cvc" class="form-control">
+          <div class="invalid-feedback">
+            Security code is required
+          </div>
+        </div>
+        <div class="cc-zip col-md-2">
+          <label for="zipcode" class="form-label">ZIP code</label>
+          <input type="text" id="zipcode" class="form-control">
+          <div class="invalid-feedback">
+            ZIP code is required
+          </div>
+        </div>
+      </div>
+      
+        
+      
+    </div>
+    <div class="text-center">
+      <button class="btn btn-success w-50" type="submit">Pay</button> 
+    </div>
+    
+  </form>
+  
   
 </body>
 </html>
